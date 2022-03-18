@@ -12,6 +12,13 @@
 
   ## Installation:
   Run `node index.js` in the terminal to start the application.
+  
+  
+
+https://user-images.githubusercontent.com/90944910/159075504-c95d4d9b-f869-4045-a4c9-2bd46719bfd5.mov
+
+
+  
 
   ## Further Development:
   I hope to include a feature wehre users can choose the different sub-sections of their READMEs. This would allow for personalization.
