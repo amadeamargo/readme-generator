@@ -1,6 +1,6 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
-const generateMarkdown = require('.')
+const generateMarkdown = require('./utils/generateMarkdown')
 
 const questions = [
     {
@@ -26,7 +26,7 @@ const questions = [
     {
         type: 'input',
         message: "Please explain how to run the application.",
-        name: "demo"
+        name: "installation"
     },
     {
         type: 'input',
@@ -44,7 +44,7 @@ function writeToFile(fileName, data) {
     const markdown = generateMarkdown(data);
     console.log(markdown)
     
-    fs.writeToFile(fileName, markdown, (err) => 
+    fs.writeFile(fileName, markdown, (err) => 
         err ? console.error("Unable to write README file") : console.log ("Succesfully wrote README file0")
     )
 }
