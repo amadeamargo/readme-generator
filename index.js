@@ -20,6 +20,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: "What licenses does your application have?",
+        name: "license"
+    },
+    {
+        type: 'input',
         message: "Who are the contributors of this application?",
         name: "contributors"
     }
