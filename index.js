@@ -45,7 +45,7 @@ function writeToFile(fileName, data) {
     console.log(markdown)
     
     fs.writeFile(fileName, markdown, (err) => 
-        err ? console.error("Unable to write README file") : console.log ("Succesfully wrote README file0")
+        err ? console.error("Unable to write README file") : console.log ("Succesfully wrote README file.")
     )
 }
 
