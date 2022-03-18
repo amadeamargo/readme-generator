@@ -30,11 +30,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: "What licenses does your application have?",
-        name: "license"
-    },
-    {
-        type: 'input',
         message: "Who are the contributors of this application?",
         name: "contributors"
     },
@@ -53,8 +48,6 @@ function writeToFile(fileName, data) {
         err ? console.error("Unable to write README file") : console.log ("Succesfully wrote README file0")
     )
 }
-
-// function to render license badges
 
 
 function init() {
