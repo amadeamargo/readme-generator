@@ -14,6 +14,24 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## Description:
+  ${data.description}
+
+  ## Demo:
+  ${data.demo}
+
+  ## Licenses:
+  ${data.license}
+
+  ## Further Development:
+  ${data.development}
+
+  ## Contributors:
+  ${data.contributors}
+
+  ## Further Inquiries:
+  For any questions, feel free to reach me at 
+
 `;
 }
 

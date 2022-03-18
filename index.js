@@ -10,13 +10,23 @@ const questions = [
     },
     {
         type: 'input',
+        message: "What is your email?",
+        name: "email"
+    },
+    {
+        type: 'input',
         message: "What is the title of your repository?",
-        name: "repository title"
+        name: "title"
     },
     {
         type: 'input',
         message: "Please give a brief description of your application?",
         name: "description"
+    },
+    {
+        type: 'input',
+        message: "Please explain how to run the application.",
+        name: "demo"
     },
     {
         type: 'input',
@@ -27,6 +37,11 @@ const questions = [
         type: 'input',
         message: "Who are the contributors of this application?",
         name: "contributors"
+    },
+    {
+        type: 'input',
+        message: "Please describe any plans for further development of this app.",
+        name: "development"
     }
 ]
 
@@ -38,6 +53,9 @@ function writeToFile(fileName, data) {
         err ? console.error("Unable to write README file") : console.log ("Succesfully wrote README file0")
     )
 }
+
+// function to render license badges
+
 
 function init() {
     inquirer.prompt (questions)
