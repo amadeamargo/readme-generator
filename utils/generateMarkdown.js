@@ -30,7 +30,7 @@ function generateMarkdown(data) {
   ${data.contributors}
 
   ## Further Inquiries:
-  For any questions, feel free to reach me at 
+  For any questions, feel free to reach me at ${data.email} or check out my GitHub profile (${data.github})
 
 `;
 }
